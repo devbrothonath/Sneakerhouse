@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito:wght@200;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Zeyada&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 30px 0px 30px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  height: 60px;
+}
+
+.storeLogo {
+  padding-top: 10px;
+  width: 220px;
+  height: 90%;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #888;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+}
+
+.searchInput::placeholder {
+  color: #d3d3d3;
+}
+
+.limitedOffer {
+  font-size: 20px;
+ text-decoration: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: 3px solid rgb(1, 1, 1, 0);
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.limitedOffer:visited {
+  color: #fff;
+}
+
+.limitedOffer:hover {
+  border: 3px solid rgb(255, 255, 255, 1);
+  transition: 0.2s;
+  color: #fff;
+}
+
+.navBottom {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin: 5px 10px 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-button {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #111;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.2s;
+  list-style-type: none;
+}
+
+.nav-button:hover {
+  background: #fff;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: #d3d3d3;
+  font-weight: 400;
+}
+
+section {
+  margin: 0;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 83vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.main .sliderWrapper {
+  position: absolute;
+  width: 400%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+  animation: slider 26s infinite;
+}
+
+.main .sliderWrapper .slider-item {
+  position: relative;
+  width: 25%;
+  float: left;
+}
+
+.main-background {
+  height: 110vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.slider-img {
+  background: rgb(1, 1, 1, 0.95);
+  height: 100%;
+}
+
+.slider-img img {
+  width: 100%;
+}
+
+.heading-1 {
+  display: flex;
+  align-items: flex-end;
+
+  height: 80vh;
+
+  text-decoration: none;
+}
+
+.heading-1:visited {
+  text-decoration: none;
+}
+
+.second {
+  text-align: right;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.logo {
+  font-family: "Zeyada", cursive;
+  display: block;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #111;
+  line-height: 115%;
+  margin: 10px 100px;
+}
+
+.brand_section {
+  margin: 0 50px;
+  padding: 0 3%;
+}
+
+.brand_name {
+  letter-spacing: 7px;
+  
+}
+
+.brand_name span {
+cursor: pointer;
+}
+
+h2 {
+  font-weight: bold;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 35px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 40px;
+  border: 4px solid rgb(142, 135, 135, 0.01);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.inside {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: px;
+}
+
+.all-products {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+  padding-right: 35px;
+}
+
+.all-products-button {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px 10px 30px;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #111;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.1s;
+}
+
+.all-products-button .arrow {
+  opacity: 0;
+  transition: 0.1s;
+  margin: 0;
+}
+
+.all-products-button:hover {
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.all-products-button:hover span {
+  opacity: 1;
+  transition: 0.1s;
+  background-color: #111;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.1);
+
+  transition: 0.3s;
+  border: 4px solid rgb(142, 135, 135, 1);
+}
+img {
+  width: 100%;
+}
+
+.productsList {
+  margin: 40px 50px;
+}
+
+.flexList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.productMenu {
+  text-align: left;
+}
+
+.menuList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuList li {
+  padding: 10px 10px 10px 0;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 6px 0;
+  color: #808080;
+}
+
+.menuList li:hover {
+  color: #111;
+}
+
+footer {
+  display: flex;
+  background: #111;
+  margin-top: 20px;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 16px;
+  color: #fff;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.fListItem:hover {
+  color: #fff;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.fIcons {
+  display: flex;
+  border-radius: 10px;
+}
+
+.fIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+}
